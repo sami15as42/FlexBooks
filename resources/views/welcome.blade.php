@@ -74,7 +74,6 @@
     $books_number = count_books($dossier);
     $categories_number = count_categories($dossier);
 ?>
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
