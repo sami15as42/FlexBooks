@@ -17,7 +17,7 @@ class CategoriesController extends Controller
 
     public function show($category)
     {
-        if (array_search($category,$this->get_categories(),true)!=null)
+        if (array_search($category,$this->get_categories(),true)>=0)
         return view("page")->with("category", $category);
         else return view("error");
     }

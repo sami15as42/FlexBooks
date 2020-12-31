@@ -215,13 +215,15 @@
                                     <div class="row">
                                         <!-- Book Overview Single Content -->
                                         <?php foreach($array as $fichier): ?>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="mu-book-overview-single" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
-                                            <!--img src="../assets/icons/{{$fichier}}.png" style="width:50px;height:50px;"></img-->
-                                                <img src="../assets/icons/Maths.png" style="width:50px;height:50px;"></img><br>
-                                                <h5><?= $fichier ?></h5>
+                                        <a href="/FlexBooks/public/<?= $fichier ?>">
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mu-book-overview-single" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+                                                <!--img src="../assets/icons/{{$fichier}}.png" style="width:50px;height:50px;"></img-->
+                                                    <img src="../assets/icons/Maths.png" style="width:50px;height:50px;"></img><br>
+                                                    <h5><?= $fichier ?></h5>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
